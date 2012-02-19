@@ -2,7 +2,7 @@ This is a set of my personal dotfiles.
 
 Installation:
   * Clone the repository on $HOME/.dotfiles
-  * cd .dotfiles
+  * cd ~/.dotfiles
   * ./install.sh
 
 I have taken the installer from plu, so please thank him:
