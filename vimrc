@@ -4,11 +4,19 @@ set nocompatible
 " Enable syntax highlighting
 syntax on
 
-" Enable auto indent
+" Use 2 spaces instead of tabs
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+
+" Improve search
+set ignorecase
+set smartcase
+
+" Avoid creation of backups
+set nobackup
+set noswapfile
 
 " Other options
 set whichwrap+=>
@@ -26,4 +34,7 @@ set nomodeline
 if has("autocmd")
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=78
+
+  " Clear trailing whitespace on save
+  autocmd BufWritePre * :%s/\s\+$//e
 endif
