@@ -34,7 +34,4 @@ set nomodeline
 if has("autocmd")
   " For all text files set 'textwidth' to 78 characters.
   autocmd FileType text setlocal textwidth=78
-
-  " Clear trailing whitespace on save
-  autocmd BufWritePre * :%s/\s\+$//e
 endif
