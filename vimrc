@@ -6,8 +6,8 @@ syntax on
 
 " Set colors
 set t_Co=256
-highlight LineNr ctermfg=white
-highlight LineNr ctermbg=
+highlight LineNr ctermfg=black
+highlight LineNr ctermbg=lightgrey
 
 " Use 2 spaces instead of tabs
 set expandtab
