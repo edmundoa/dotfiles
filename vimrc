@@ -4,6 +4,11 @@ set nocompatible
 " Enable syntax highlighting
 syntax on
 
+" Set colors
+set t_Co=256
+highlight LineNr ctermfg=white
+highlight LineNr ctermbg=
+
 " Use 2 spaces instead of tabs
 set expandtab
 set tabstop=2
@@ -19,6 +24,7 @@ set nobackup
 set noswapfile
 
 " Other options
+set number
 set whichwrap+=>
 set whichwrap+=<
 set browsedir=current
