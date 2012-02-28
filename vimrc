@@ -37,7 +37,7 @@ set number
 set whichwrap+=>
 set whichwrap+=<
 set browsedir=current
-set nowrap
+set wrap
 set hidden
 set nostartofline
 set history=5000
