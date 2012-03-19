@@ -22,6 +22,7 @@ set softtabstop=2
 " Improve search
 set ignorecase
 set smartcase
+set hlsearch
 
 " Avoid creation of backups
 set nobackup
