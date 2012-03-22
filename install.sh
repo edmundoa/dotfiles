@@ -2,6 +2,8 @@
 
 NERDTREE_REPO="https://github.com/scrooloose/nerdtree.git"
 NERDTREE_PATH="$HOME/.dotfiles/vim/bundle/nerdtree"
+RUBYTEST_REPO="https://github.com/janx/vim-rubytest.git"
+RUBYTEST_PATH="$HOME/.dotfiles/vim/bundle/vim-rubytest"
 
 for file in $(ls $HOME/.dotfiles/); do
     if [ ! -e "$HOME/.$file" ]; then
@@ -9,9 +11,7 @@ for file in $(ls $HOME/.dotfiles/); do
     fi
 done
 
-if [ "$(ls -A $NERDTREE_PATH)" ]; then
-  echo "NERDTree seems to be already installed"
-else
-  echo "Cloning NERDTree for vim..."
-  git clone $NERDTREE_REPO $NERDTREE_PATH
-fi
+echo "Cloning plugins for vim..."
+git clone $NERDTREE_REPO $NERDTREE_PATH
+git clone $RUBYTEST_REPO $RUBYTEST_PATH
+
