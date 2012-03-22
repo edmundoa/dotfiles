@@ -7,5 +7,6 @@ for file in $(ls $HOME/.dotfiles/); do
 done
 
 echo "Updating submodules..."
-git submodule update
+git submodule -q init
+git submodule -q update
 
