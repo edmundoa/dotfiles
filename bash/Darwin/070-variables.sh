@@ -4,4 +4,4 @@ export PATH=$PATH:/opt/local/sbin
 export PATH=$PATH:/usr/local/bin
 
 export CLICOLOR=1 # for terminal colors
-export GREP_OPTIONS='--color=auto --line-number'
+export GREP_OPTIONS='--color=auto'

@@ -1,2 +1,2 @@
 alias ls="ls -G"
-alias textmate="open -a /Applications/TextMate.app/Contents/MacOS/TextMate"
+alias gitx="open -a /Applications/GitX.app/Contents/MacOS/GitX"
