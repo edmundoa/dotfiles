@@ -7,11 +7,13 @@ call pathogen#infect()
 " Enable syntax highlighting
 syntax on
 colorscheme railscasts
+filetype plugin indent on
 
 " Set colors
 set t_Co=256
 highlight LineNr ctermfg=darkgrey
 "highlight LineNr ctermbg=lightgrey
+set cursorline
 
 " Use 2 spaces instead of tabs
 set expandtab
@@ -33,6 +35,9 @@ set list
 set lcs=eol:¬
 set lcs=tab:»»
 
+" Show available command options when tab is pressed
+set wildmode=longest,list
+
 " Other options
 set number
 set whichwrap+=>
@@ -45,6 +50,8 @@ set history=5000
 set backspace=indent,eol,start
 set ruler
 set nomodeline
+set scrolloff=3
+
 
 " Open Nerdtree function (In dir of opened file)
 function OpenNERDTree()
@@ -67,4 +74,3 @@ endfunction
 " Relative line numbering quick keys.
 command -nargs=0 ToggleRltvNmbr :call ToggleRltvNmbr()
 nmap <ESC>l :ToggleRltvNmbr<CR>
-
