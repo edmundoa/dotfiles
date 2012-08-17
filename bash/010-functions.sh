@@ -10,8 +10,8 @@ __git_branch(){
   fi
 };
 
-alias __set_git_ps1='export PS1="\[$(tput setaf 7)\]\u:\W \[$(tput setaf 1)\]$(__git_branch)\$ \[$(tput sgr0)\]"'
-alias __set_normal_ps1='PS1="\[$(tput setaf 7)\]\u@\h:\W\$ \[$(tput sgr0)\]"'
+alias __set_git_ps1='export PS1="\[$(tput setaf 7)\][\u \W]\[$(tput setaf 1)\]$(__git_branch)\[$(tput setaf 3)\][\j]\[$(tput setaf 7)\]\$ \[$(tput sgr0)\]"'
+alias __set_normal_ps1='PS1="\[$(tput setaf 7)\][\u@\h \W]\[$(tput setaf 3)\][\j]\[$(tput setaf 7)\]\$ \[$(tput sgr0)\]"'
 
 __select_ps1(){
   [ -n "`__git_branch`" ] && __set_git_ps1 || __set_normal_ps1
