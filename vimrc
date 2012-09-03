@@ -12,8 +12,9 @@ filetype plugin indent on
 " Set colors
 set t_Co=256
 highlight LineNr ctermfg=darkgrey
-"highlight LineNr ctermbg=lightgrey
 set cursorline
+highlight NonText ctermfg=darkgrey
+highlight SpecialKey ctermfg=darkgrey
 
 " Use 2 spaces instead of tabs
 set expandtab
@@ -32,8 +33,7 @@ set noswapfile
 
 " Print hidden characters
 set list
-set lcs=eol:¬
-set lcs=tab:»»
+set lcs=tab:»»,eol:¬
 
 " Show available command options when tab is pressed
 set wildmode=longest,list
