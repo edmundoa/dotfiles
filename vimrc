@@ -7,7 +7,12 @@ call pathogen#infect()
 " Enable syntax highlighting
 syntax on
 colorscheme railscasts
-filetype plugin indent on
+
+" Enable filetype detection if it's supported
+if has("autocmd")
+  filetype on
+  filetype plugin indent on
+endif
 
 " Set colors
 set t_Co=256
