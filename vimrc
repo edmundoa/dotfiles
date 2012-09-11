@@ -6,7 +6,8 @@ call pathogen#infect()
 
 " Enable syntax highlighting
 syntax on
-colorscheme railscasts
+colorscheme Tomorrow-Night
+"colorscheme railscasts
 
 " Enable filetype detection if it's supported
 if has("autocmd")
