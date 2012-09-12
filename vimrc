@@ -68,15 +68,5 @@ endfunction
 command -nargs=0 OpenNERDTree :call OpenNERDTree()
 nmap <ESC>t :OpenNERDTree<CR>
 
-" Toggle relative line numbering
-function ToggleRltvNmbr()
-  if(b:rltvnmbrmode == 1)
-    execute ":RltvNmbr!"
-  else
-    execute ":RltvNmbr"
-  endif
-endfunction
-
 " Relative line numbering quick keys.
-command -nargs=0 ToggleRltvNmbr :call ToggleRltvNmbr()
-nmap <ESC>l :ToggleRltvNmbr<CR>
+nmap <ESC>l :RN<CR>
