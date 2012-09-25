@@ -70,3 +70,6 @@ nmap <ESC>t :OpenNERDTree<CR>
 
 " Relative line numbering quick keys.
 nmap <ESC>l :RN<CR>
+
+" Paste the previous content stored in the buffer
+nmap <ESC>p "0p
