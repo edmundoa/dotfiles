@@ -24,8 +24,10 @@ if has("gui_running")
   set guioptions=t "hide MacVim toolbar
 endif
 
-" Always show statusline
+" Statusline tricks
 set laststatus=2
+set noru
+set noshowmode
 
 " Set colors
 set t_Co=256
