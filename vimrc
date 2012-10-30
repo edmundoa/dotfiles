@@ -19,6 +19,14 @@ if has("autocmd")
   autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
 endif
 
+" GUI tweaks
+if has("gui_running")
+  set guioptions=t "hide MacVim toolbar
+endif
+
+" Always show statusline
+set laststatus=2
+
 " Set colors
 set t_Co=256
 highlight LineNr ctermfg=darkgrey
