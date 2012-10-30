@@ -59,6 +59,7 @@ set lcs=tab:»»,eol:¬
 set wildmode=longest,list
 
 " Other options
+set enc=utf-8
 set number
 set whichwrap+=>
 set whichwrap+=<
@@ -74,12 +75,12 @@ set scrolloff=3
 
 
 " Open Nerdtree function (In dir of opened file)
-function OpenNERDTree()
+function! OpenNERDTree()
   execute ":NERDTree %"
 endfunction
 
 " Open NERDTree with <ESC>+t
-command -nargs=0 OpenNERDTree :call OpenNERDTree()
+command! -nargs=0 OpenNERDTree :call OpenNERDTree()
 nmap <ESC>t :OpenNERDTree<CR>
 
 " Relative line numbering quick keys.
