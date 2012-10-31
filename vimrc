@@ -88,3 +88,6 @@ nmap <ESC>l :RN<CR>
 
 " Paste the previous content stored in the buffer
 nmap <ESC>p "0p
+
+" Clear search highlight
+nmap <ESC>/ :nohlsearch<CR>
