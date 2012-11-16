@@ -12,3 +12,5 @@
   branch = auto
   ui = auto
   interactive = auto
+[alias]
+  stauts = !sh -c 'gti status'
