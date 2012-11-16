@@ -14,5 +14,3 @@
   interactive = auto
 [alias]
   stauts = !sh -c 'gti status'
-[merge]
-  ff = false
