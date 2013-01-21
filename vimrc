@@ -7,7 +7,6 @@ call pathogen#infect()
 " Enable syntax highlighting
 syntax on
 colorscheme Tomorrow-Night
-"colorscheme railscasts
 
 " Enable filetype detection if it's supported
 if has("autocmd")
@@ -47,9 +46,10 @@ set ignorecase
 set smartcase
 set hlsearch
 
-" Avoid creation of backups
+" Backup and swap options
 set nobackup
-set noswapfile
+set writebackup
+set swapfile
 
 " Print hidden characters
 set list
