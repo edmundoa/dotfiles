@@ -28,6 +28,10 @@ set laststatus=2
 set noru
 set noshowmode
 
+" Change split behavior
+set splitright
+set splitbelow
+
 " Set colors
 set t_Co=256
 highlight LineNr ctermfg=darkgrey
