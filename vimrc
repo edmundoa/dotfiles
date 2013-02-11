@@ -98,3 +98,6 @@ nmap <ESC>/ :nohlsearch<CR>
 
 " Build PDF file from LaTeX
 command! Latex2pdf execute "!latexmk -pdf %"
+
+" Activate hardmode by default
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
