@@ -1,4 +1,4 @@
-if [ -f $HOME/bin ]; then
+if [ -d $HOME/bin ]; then
   export PATH=$PATH:$HOME/bin
 fi
 
