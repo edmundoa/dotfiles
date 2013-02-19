@@ -2,6 +2,10 @@ if [ -d $HOME/bin ]; then
   export PATH=$PATH:$HOME/bin
 fi
 
+if [ -d /usr/local/heroku ]; then
+  export PATH=$PATH:/usr/local/heroku/bin
+fi
+
 export DEBEMAIL=e.alvarezj@gmail.com
 export DEBFULLNAME="Edmundo Alvarez Jimenez"
 
