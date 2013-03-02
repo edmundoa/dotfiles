@@ -95,7 +95,6 @@ nmap <ESC>p "0p
 
 " Clear search highlight
 nmap <ESC>/ :nohlsearch<CR>
-nmap <CR>   :nohlsearch<CR>
 
 " Build PDF file from LaTeX
 command! Latex2pdf execute "!latexmk -pdf %"
