@@ -77,6 +77,11 @@ set ruler
 set nomodeline
 set scrolloff=3
 
+" Disable arrow keys
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
 
 " Open Nerdtree function (In dir of opened file)
 function! OpenNERDTree()
