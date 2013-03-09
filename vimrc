@@ -88,18 +88,21 @@ function! OpenNERDTree()
   execute ":NERDTree %"
 endfunction
 
-" Open NERDTree with <ESC>+t
+" Open NERDTree with ,t
 command! -nargs=0 OpenNERDTree :call OpenNERDTree()
-nmap <ESC>t :OpenNERDTree<CR>
+nmap ,t :OpenNERDTree<CR>
 
 " Relative line numbering quick keys.
-nmap <ESC>l :RN<CR>
+nmap ,l :RN<CR>
 
 " Paste the previous content stored in the buffer
-nmap <ESC>p "0p
+nmap ,pp "0p
+
+" Toggle paste mode
+set pastetoggle=,p
 
 " Clear search highlight
-nmap <ESC>/ :nohlsearch<CR>
+nmap ,/ :nohlsearch<CR>
 
 " Build PDF file from LaTeX
 command! Latex2pdf execute "!latexmk -pdf %"
