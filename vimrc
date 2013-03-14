@@ -99,7 +99,7 @@ nmap ,l :RN<CR>
 nmap ,pp "0p
 
 " Toggle paste mode
-set pastetoggle=,p
+set pastetoggle=<Leader>p
 
 " Clear search highlight
 nmap ,/ :nohlsearch<CR>
