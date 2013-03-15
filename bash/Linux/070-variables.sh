@@ -10,6 +10,10 @@ if [ -x /usr/bin/javac ]; then
   export JAVA_HOME=$(readlink -f /usr/bin/javac | sed 's:/bin/javac::')
 fi
 
+if [ -d $HOME/.play ]; then
+  export PATH=$PATH:$HOME/.play/play
+fi
+
 export DEBEMAIL=e.alvarezj@gmail.com
 export DEBFULLNAME="Edmundo Alvarez Jimenez"
 
