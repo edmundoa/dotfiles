@@ -17,6 +17,7 @@ fi
 export DEBEMAIL=e.alvarezj@gmail.com
 export DEBFULLNAME="Edmundo Alvarez Jimenez"
 
-
-export GPODDER_HOME=$HOME/.gPodder
-export GPODDER_DOWNLOAD_DIR=$HOME/Podcasts
+if [ -d $HOME/.gPodder ]; then
+  export GPODDER_HOME=$HOME/.gPodder
+  export GPODDER_DOWNLOAD_DIR=$HOME/Podcasts
+fi
