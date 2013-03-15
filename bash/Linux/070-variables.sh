@@ -6,10 +6,13 @@ if [ -d /usr/local/heroku ]; then
   export PATH=$PATH:/usr/local/heroku/bin
 fi
 
+if [ -x /usr/bin/javac ]; then
+  export JAVA_HOME=$(readlink -f /usr/bin/javac | sed 's:/bin/javac::')
+fi
+
 export DEBEMAIL=e.alvarezj@gmail.com
 export DEBFULLNAME="Edmundo Alvarez Jimenez"
 
-export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64/jre
 
 export GPODDER_HOME=$HOME/.gPodder
 export GPODDER_DOWNLOAD_DIR=$HOME/Podcasts
