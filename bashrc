@@ -17,4 +17,4 @@ source_dir "$HOME/.bash"
 source_dir "$HOME/.bash/$OS"
 
 #Pretty PS1
-PROMPT_COMMAND=__select_ps1
+PROMPT_COMMAND="__select_ps1;$PROMPT_COMMAND"
