@@ -8,6 +8,10 @@ call pathogen#infect()
 syntax on
 colorscheme Tomorrow-Night
 
+if exists("&colorcolumn")
+  set colorcolumn=80
+endif
+
 " Enable filetype detection if it's supported
 if has("autocmd")
   filetype on
