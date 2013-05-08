@@ -97,7 +97,10 @@ endfunction
 
 " Open NERDTree with ,t
 command! -nargs=0 OpenNERDTree :call OpenNERDTree()
-nmap ,t :OpenNERDTree<CR>
+nmap ,n :OpenNERDTree<CR>
+
+nmap ,t :CtrlP<CR>
+nmap ,m :CtrlPMRUFiles<CR>
 
 " Relative line numbering quick keys.
 nmap ,l :RN<CR>
