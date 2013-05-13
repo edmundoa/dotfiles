@@ -99,8 +99,10 @@ endfunction
 command! -nargs=0 OpenNERDTree :call OpenNERDTree()
 nmap ,n :OpenNERDTree<CR>
 
+" Mappings for CtrlP
 nmap ,t :CtrlP<CR>
-nmap ,m :CtrlPMRUFiles<CR>
+nmap ,h :CtrlPCurFile<CR>
+nmap ,r :CtrlPMRUFiles<CR>
 
 " Relative line numbering quick keys.
 nmap ,l :RN<CR>
