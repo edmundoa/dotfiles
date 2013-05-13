@@ -13,6 +13,6 @@ function source_dir {
 export EDITOR=vim
 export OS=$(uname)
 
+source "$HOME/.liquidprompt/liquidprompt"
 source_dir "$HOME/.bash"
 source_dir "$HOME/.bash/$OS"
-source "$HOME/.liquidprompt/liquidprompt"
