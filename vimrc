@@ -3,6 +3,7 @@ set nocompatible
 
 " Load pathogen infect
 call pathogen#infect()
+Helptags
 
 " Enable syntax highlighting
 syntax on
