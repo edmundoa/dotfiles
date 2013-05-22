@@ -103,7 +103,8 @@ nmap ,n :OpenNERDTree<CR>
 " Mappings for CtrlP
 nmap ,t :CtrlP<CR>
 nmap ,h :CtrlPCurFile<CR>
-nmap ,r :CtrlPMRUFiles<CR>
+nmap ,m :CtrlPMRUFiles<CR>
+nmap ,r :CtrlPClearCache<CR>
 
 " Relative line numbering quick keys.
 nmap ,l :RN<CR>
