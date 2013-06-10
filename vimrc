@@ -85,20 +85,26 @@ set ruler
 set nomodeline
 set scrolloff=3
 
+" Open Nerdtree function (In dir of opened file)
+function! OpenNERDTree()
+  execute ":NERDTree %"
+endfunction
+command! -nargs=0 OpenNERDTree :call OpenNERDTree()
+
+" Toggle paste mode
+set pastetoggle=<Leader>p
+
+" Build PDF file from LaTeX
+command! Latex2pdf execute "!latexmk -pdf %"
+
+" Execute command and get the output on a new window
+command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
+
 " Disable arrow keys
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
-
-" Open Nerdtree function (In dir of opened file)
-function! OpenNERDTree()
-  execute ":NERDTree %"
-endfunction
-
-" Open NERDTree with ,t
-command! -nargs=0 OpenNERDTree :call OpenNERDTree()
-nmap ,n :OpenNERDTree<CR>
 
 " Mappings for CtrlP
 nmap ,t :CtrlP<CR>
@@ -106,17 +112,19 @@ nmap ,h :CtrlPCurFile<CR>
 nmap ,m :CtrlPMRUFiles<CR>
 nmap ,r :CtrlPClearCache<CR>
 
+" Open NERDTree with ,t
+nmap ,n :OpenNERDTree<CR>
+
 " Relative line numbering quick keys.
 nmap ,l :RN<CR>
 
 " Paste the previous content stored in the buffer
 nmap ,pp "0p
 
-" Toggle paste mode
-set pastetoggle=<Leader>p
-
 " Clear search highlight
 nmap ,/ :nohlsearch<CR>
 
-" Build PDF file from LaTeX
-command! Latex2pdf execute "!latexmk -pdf %"
+" Mapping to open file under cursor
+nmap ,o  gf<CR>
+nmap ,ov :vertical wincmd f<CR>
+nmap ,ot :wincmd gf<CR>
