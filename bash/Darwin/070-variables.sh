@@ -5,5 +5,3 @@ export PATH=$PATH:/usr/local/go/bin
 export CLICOLOR=1 # for terminal colors
 export GREP_OPTIONS='--color=auto'
 export KNIFE="env"
-
-export GOROOT=/usr/local/go
