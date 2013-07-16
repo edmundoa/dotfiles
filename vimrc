@@ -36,6 +36,11 @@ set laststatus=2
 set noru
 set noshowmode
 
+" vim-airline config
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline_powerline_fonts=0
+
 " Change split behavior
 set splitright
 set splitbelow
