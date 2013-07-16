@@ -14,5 +14,6 @@
   interactive = auto
 [alias]
   stauts = !sh -c 'gti status'
+  aa = add --all
 [grep]
   lineNumber = true
