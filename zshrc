@@ -1,11 +1,10 @@
 ZSH=$HOME/.oh-my-zsh
 
-# fishy michelebologna steeef
-ZSH_THEME="steeef"
-CASE_SENSITIVE="true"
+# fishy steeef af-magic
+ZSH_THEME="af-magic"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_AUTO_TITLE="true"
-plugins=(brew bundler capistrano git osx rails rails3 ruby rvm)
+plugins=(brew bundler git osx ruby rvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -32,4 +31,4 @@ export KNIFE="env"
 export JRUBY_OPTS=--1.9
 
 # add direnv
-eval `direnv hook $0`
+eval `direnv hook zsh`
