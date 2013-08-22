@@ -136,3 +136,7 @@ nmap ,/ :nohlsearch<CR>
 nmap ,o  gf<CR>
 nmap ,ov :vertical wincmd f<CR>
 nmap ,ot :wincmd gf<CR>
+
+" Mappings to align code
+vmap <Leader>ae :Tabularize /=<CR>
+vmap <Leader>aa :Tabularize /=><CR>
