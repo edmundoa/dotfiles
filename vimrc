@@ -2,7 +2,7 @@
 set nocompatible
 
 " Load pathogen infect
-call pathogen#infect()
+execute pathogen#infect()
 Helptags
 
 " Enable syntax highlighting
