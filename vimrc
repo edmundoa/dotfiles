@@ -7,7 +7,8 @@ Helptags
 
 " Enable syntax highlighting
 syntax on
-colorscheme Tomorrow-Night
+set background=dark
+colorscheme solarized
 
 if exists("&colorcolumn")
   set colorcolumn=80
