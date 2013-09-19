@@ -16,5 +16,6 @@
   stauts = !sh -c 'gti status'
   satus = !sh -c 'gti status'
   aa = add --all
+  dc = diff --cached
 [grep]
   lineNumber = true
