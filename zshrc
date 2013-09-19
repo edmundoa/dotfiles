@@ -11,6 +11,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias md5tree='find ./ -type f -print0 | xargs -0 md5sum'
 alias ll='ls -l'
+alias git='nocorrect git'
 
 # OSX aliases
 alias gitx="open -a /Applications/GitX.app/Contents/MacOS/GitX"
