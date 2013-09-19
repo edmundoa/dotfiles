@@ -40,7 +40,7 @@ set noshowmode
 " vim-airline config
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='simple'
+let g:airline_theme='solarized'
 let g:airline_enable_syntastic=0
 let g:airline_powerline_fonts=0
 
