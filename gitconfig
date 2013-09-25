@@ -17,6 +17,6 @@
   satus = !sh -c 'gti status'
   aa = add --all
   dc = diff --cached
-  lc = !sh -c 'CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git log $CURRENT_BRANCH ^origin/$CURRENT_BRANCH'
+  lc = !sh -c 'CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git log $1 $CURRENT_BRANCH ^origin/$CURRENT_BRANCH' -
 [grep]
   lineNumber = true
