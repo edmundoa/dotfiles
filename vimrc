@@ -44,6 +44,9 @@ let g:airline_theme='solarized'
 let g:airline_enable_syntastic=0
 let g:airline_powerline_fonts=0
 
+" vim-vroom config
+let g:vroom_use_dispatch=1
+
 " Change split behavior
 set splitright
 set splitbelow
@@ -115,7 +118,7 @@ map <Up> <Nop>
 map <Down> <Nop>
 
 " Mappings for CtrlP
-nmap ,t :CtrlP<CR>
+nmap ,f :CtrlP<CR>
 nmap ,h :CtrlPCurFile<CR>
 nmap ,m :CtrlPMRUFiles<CR>
 nmap ,r :CtrlPClearCache<CR>
