@@ -1,6 +1,3 @@
-[submodule "vim/bundle/vim-rubytest"]
-	path = vim/bundle/vim-rubytest
-	url = git://github.com/janx/vim-rubytest.git
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
