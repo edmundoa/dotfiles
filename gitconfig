@@ -13,10 +13,11 @@
   ui = auto
   interactive = auto
 [alias]
-  stauts = !sh -c 'gti status'
-  satus = !sh -c 'gti status'
   aa = add --all
+  co = checkout
   dc = diff --cached
   lc = !sh -c 'CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git log $1 $CURRENT_BRANCH ^origin/$CURRENT_BRANCH' -
+  satus = !sh -c 'gti status'
+  stauts = !sh -c 'gti status'
 [grep]
   lineNumber = true
