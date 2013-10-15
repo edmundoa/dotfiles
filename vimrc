@@ -7,7 +7,7 @@ Helptags
 
 " Enable syntax highlighting
 syntax on
-set background=dark
+set background=light
 colorscheme solarized
 
 if exists("&colorcolumn")
