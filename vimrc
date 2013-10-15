@@ -143,3 +143,4 @@ nmap ,ot :wincmd gf<CR>
 " Mappings to align code
 vmap <Leader>ae :Tabularize /=<CR>
 vmap <Leader>aa :Tabularize /=><CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
