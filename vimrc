@@ -108,9 +108,6 @@ set pastetoggle=<Leader>p
 " Build PDF file from LaTeX
 command! Latex2pdf execute "!latexmk -pdf %"
 
-" Execute command and get the output on a new window
-command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
-
 " Disable arrow keys
 map <Left> <Nop>
 map <Right> <Nop>
@@ -122,6 +119,9 @@ nmap ,f :CtrlP<CR>
 nmap ,h :CtrlPCurFile<CR>
 nmap ,m :CtrlPMRUFiles<CR>
 nmap ,r :CtrlPClearCache<CR>
+
+" Open :Copen! with ,c
+nmap ,c :Copen!<CR>
 
 " Open NERDTree with ,t
 nmap ,n :OpenNERDTree<CR>
@@ -144,3 +144,4 @@ nmap ,ot :wincmd gf<CR>
 vmap <Leader>ae :Tabularize /=<CR>
 vmap <Leader>aa :Tabularize /=><CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a, :Tabularize /,\zs<CR>
