@@ -21,3 +21,5 @@
   stauts = !sh -c 'gti status'
 [grep]
   lineNumber = true
+[core]
+  pager = less -X
