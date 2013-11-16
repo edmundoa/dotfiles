@@ -3,6 +3,7 @@ alias md5tree='find ./ -type f -print0 | xargs -0 md5sum'
 alias ll='ls -l'
 alias be='bundle exec'
 alias bi='bundle install'
+alias less='less -X'
 
 export EDITOR=vim
 export JRUBY_OPTS=--1.9
