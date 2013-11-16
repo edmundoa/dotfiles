@@ -57,6 +57,8 @@ highlight LineNr ctermfg=darkgrey
 set cursorline
 highlight NonText ctermfg=darkgrey
 highlight SpecialKey ctermfg=darkgrey
+highlight clear SignColumn
+highlight SignColumn ctermbg=white
 
 " Use 2 spaces instead of tabs
 set expandtab
