@@ -15,10 +15,18 @@ if [ -d $HOME/Bin ]; then
 fi
 
 # RVM
-export PATH="$HOME/.rvm/bin:$PATH"
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
-rvm_silence_path_mismatch_check_flag=1
+if [ -d "$HOME/.rvm" ]; then
+  export PATH="$HOME/.rvm/bin:$PATH"
+  [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+  [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
+  rvm_silence_path_mismatch_check_flag=1
+fi
+
+# Rbenv
+if [ -d "$HOME/.rbenv" ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 if [ -d /usr/local/heroku ]; then
   export PATH="$PATH:/usr/local/heroku/bin"
