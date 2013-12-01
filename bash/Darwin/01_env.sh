@@ -8,7 +8,6 @@ fi
 # Completion for sudo command
 complete -c -f command sudo
 
-export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$PATH:/usr/local/go/bin
 
