@@ -11,17 +11,17 @@ export JRUBY_OPTS=--1.9
 export PATH="/usr/local/bin:$PATH"
 
 if [ -d $HOME/Bin ]; then
-  export PATH=$HOME/Bin:$PATH
+  export PATH="$HOME/Bin:$PATH"
 fi
 
 # RVM
-export PATH=$HOME/.rvm/bin:$PATH
+export PATH="$HOME/.rvm/bin:$PATH"
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 rvm_silence_path_mismatch_check_flag=1
 
 if [ -d /usr/local/heroku ]; then
-  export PATH=$PATH:/usr/local/heroku/bin
+  export PATH="$PATH:/usr/local/heroku/bin"
 fi
 
 # History customization
