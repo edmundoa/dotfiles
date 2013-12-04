@@ -69,4 +69,4 @@
 	url = git://github.com/airblade/vim-gitgutter.git
 [submodule "vim/bundle/ag.vim"]
 	path = vim/bundle/ag.vim
-	url = git://github.com/vim-scripts/ag.vim.git
+	url = git://github.com/rking/ag.vim.git
