@@ -1,13 +1,3 @@
-ZSH=$HOME/.oh-my-zsh
-
-# fishy steeef af-magic
-ZSH_THEME="afowler"
-DISABLE_AUTO_UPDATE="true"
-DISABLE_AUTO_TITLE="true"
-plugins=(brew bundler git osx ruby rvm)
-
-source $ZSH/oh-my-zsh.sh
-
 # Aliases
 alias md5tree='find ./ -type f -print0 | xargs -0 md5sum'
 alias ll='ls -l'
