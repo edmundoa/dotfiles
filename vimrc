@@ -131,9 +131,6 @@ nmap ,n :OpenNERDTree<CR>
 " Relative line numbering quick keys.
 nmap ,l :RN<CR>
 
-" Paste the previous content stored in the buffer
-nmap ,pp "0p
-
 " Clear search highlight
 nmap ,/ :nohlsearch<CR>
 
