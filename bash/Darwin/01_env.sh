@@ -15,3 +15,6 @@ export CLICOLOR=1 # for terminal colors
 export GREP_OPTIONS='--color=auto'
 export KNIFE="env"
 
+# Include homebrew's python path
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+
