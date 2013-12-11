@@ -16,8 +16,7 @@
   aa = add --all
   co = checkout
   dc = diff --cached
-  lcu = !git-log-changes-upstream "$@"
-  lcb = !git-log-changes-base "$@"
+  lcu = log @{u}..
   satus = !sh -c 'gti status'
   stauts = !sh -c 'gti status'
 [grep]
