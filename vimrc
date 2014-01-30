@@ -5,6 +5,9 @@ set nocompatible
 execute pathogen#infect()
 Helptags
 
+" Load Man plugin
+source $VIMRUNTIME/ftplugin/man.vim
+
 " Enable syntax highlighting
 syntax on
 set background=light
