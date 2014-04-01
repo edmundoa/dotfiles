@@ -17,9 +17,13 @@
   co = checkout
   dc = diff --cached
   lcu = log @{u}..
+  sfc = show --stat --oneline
   satus = !sh -c 'gti status'
   stauts = !sh -c 'gti status'
 [grep]
   lineNumber = true
 [core]
   pager = less -X
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
