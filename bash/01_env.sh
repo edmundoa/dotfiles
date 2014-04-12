@@ -32,6 +32,10 @@ if [ -d /usr/local/heroku ]; then
   export PATH="$PATH:/usr/local/heroku/bin"
 fi
 
+unset LC_ALL
+unset LC_CTYPE
+export LANG="en_US.UTF-8"
+
 # History customization
 export HISTCONTROL=ignoredups
 export HISTCONTROL=ignoreboth
