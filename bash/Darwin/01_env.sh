@@ -19,3 +19,5 @@ export KNIFE="env"
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+export DOCKER_HOST=tcp://192.168.59.103:2375
