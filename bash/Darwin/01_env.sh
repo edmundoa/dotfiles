@@ -18,3 +18,4 @@ export KNIFE="env"
 # Include homebrew's python path
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
+export JAVA_HOME=$(/usr/libexec/java_home)
