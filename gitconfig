@@ -20,6 +20,7 @@
   sfc = show --stat --oneline
   satus = !sh -c 'gti status'
   stauts = !sh -c 'gti status'
+  statsu = !sh -c 'gti status'
 [grep]
   lineNumber = true
 [core]
