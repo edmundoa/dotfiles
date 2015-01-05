@@ -1,6 +1,6 @@
 eval "`dircolors -b`"
 alias ls='ls --color=auto'
-alias mplayer='mplayer -vo xv -framedrop'
+alias tmux='TERM=xterm-256color /usr/bin/tmux'
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
