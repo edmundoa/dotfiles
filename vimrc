@@ -10,8 +10,10 @@ source $VIMRUNTIME/ftplugin/man.vim
 
 " Enable syntax highlighting
 syntax on
-set background=light
-colorscheme solarized
+if &term != 'linux'
+  set background=light
+  colorscheme solarized
+endif
 
 if exists("&colorcolumn")
   set colorcolumn=80
