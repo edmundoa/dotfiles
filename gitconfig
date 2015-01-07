@@ -17,6 +17,7 @@
   co = checkout
   dc = diff --cached
   lcu = log @{u}..
+  lol = log --oneline --graph
   sfc = show --stat --oneline
   satus = !sh -c 'gti status'
   stauts = !sh -c 'gti status'
