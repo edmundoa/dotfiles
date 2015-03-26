@@ -1,8 +1,8 @@
 alias gitx="open -a /Applications/GitX.app/Contents/MacOS/GitX"
 alias mplayer="mplayer -framedrop -cache 8192"
 
-if [ -f /usr/local/etc/bash_completion ]; then
-  source /usr/local/etc/bash_completion
+if [ -f /usr/local/share/bash-completion/bash_completion ]; then
+  source /usr/local/share/bash-completion/bash_completion
 fi
 
 # Completion for sudo command
