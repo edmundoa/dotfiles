@@ -1,5 +1,6 @@
 alias gitx="open -a /Applications/GitX.app/Contents/MacOS/GitX"
 alias mplayer="mplayer -framedrop -cache 8192"
+alias gh='git config --get remote.origin.url | awk -F: '\''{ gsub(".git","",$2); print "https://github.com/"$2 }'\'' | xargs open'
 
 if [ -f /usr/local/share/bash-completion/bash_completion ]; then
   source /usr/local/share/bash-completion/bash_completion
