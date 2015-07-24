@@ -19,7 +19,7 @@
   dc = diff --cached
   lcu = log @{u}..
   lol = log --oneline --graph
-  sfc = show --stat --oneline
+  sfc = show --numstat --oneline
   satus = !sh -c 'gti status'
   stauts = !sh -c 'gti status'
   statsu = !sh -c 'gti status'
