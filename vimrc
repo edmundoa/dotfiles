@@ -11,7 +11,7 @@ source $VIMRUNTIME/ftplugin/man.vim
 " Enable syntax highlighting
 syntax on
 if &term != 'linux'
-  set background=light
+  set background=dark
   colorscheme solarized
 endif
 
