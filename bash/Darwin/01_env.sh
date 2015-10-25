@@ -21,6 +21,7 @@ export KNIFE="env"
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
 export DOCKER_HOST=tcp://192.168.59.103:2375
 
@@ -29,3 +30,4 @@ export NVM_DIR=~/.nvm
 if [ -f /usr/local/opt/nvm/nvm.sh ]; then
   source /usr/local/opt/nvm/nvm.sh
 fi
+
