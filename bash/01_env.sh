@@ -6,7 +6,6 @@ alias bi='bundle install'
 alias less='less -X'
 
 export EDITOR=vim
-export JRUBY_OPTS=--1.9
 
 export PATH="/usr/local/bin:$PATH"
 
