@@ -69,7 +69,7 @@
 	url = git://github.com/tpope/vim-rbenv.git
 [submodule "vim/bundle/vim-javascript"]
 	path = vim/bundle/vim-javascript
-	url = git@github.com:pangloss/vim-javascript.git
+	url = git://github.com/pangloss/vim-javascript.git
 [submodule "vim/bundle/vim-jsx"]
 	path = vim/bundle/vim-jsx
-	url = git@github.com:mxw/vim-jsx.git
+	url = git://github.com/mxw/vim-jsx.git
