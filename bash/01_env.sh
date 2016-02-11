@@ -4,6 +4,7 @@ alias ll='ls -l'
 alias be='bundle exec'
 alias bi='bundle install'
 alias less='less -X'
+alias gi='gti'
 
 export EDITOR=vim
 
