@@ -23,6 +23,7 @@
   satus = !sh -c 'gti status'
   stauts = !sh -c 'gti status'
   statsu = !sh -c 'gti status'
+  yoda = push --force-with-lease
 [grep]
   lineNumber = true
 [core]
