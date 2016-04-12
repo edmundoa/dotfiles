@@ -8,7 +8,7 @@ alias gi='gti'
 
 export EDITOR=vim
 
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 if [ -d $HOME/Bin ]; then
   export PATH="$HOME/Bin:$PATH"
