@@ -28,6 +28,9 @@ if [ -d "$HOME/.rbenv" ]; then
   eval "$(rbenv init -)"
 fi
 
+# Pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
 if [ -d /usr/local/heroku ]; then
   export PATH="$PATH:/usr/local/heroku/bin"
 fi
