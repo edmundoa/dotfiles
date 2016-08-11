@@ -5,6 +5,7 @@ alias be='bundle exec'
 alias bi='bundle install'
 alias less='less -X'
 alias gi='gti'
+alias sshu='ssh -o UserKnownHostsFile=/dev/null'
 
 export EDITOR=vim
 
