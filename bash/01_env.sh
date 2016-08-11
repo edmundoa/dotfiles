@@ -10,6 +10,7 @@ alias sshu='ssh -o UserKnownHostsFile=/dev/null'
 export EDITOR=vim
 
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export CDPATH=".:$HOME/Workspace/graylog/project/master:$HOME/Workspace/vagrant"
 
 if [ -d $HOME/Bin ]; then
   export PATH="$HOME/Bin:$PATH"
