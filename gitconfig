@@ -24,6 +24,7 @@
   stauts = !sh -c 'gti status'
   statsu = !sh -c 'gti status'
   yoda = push --force-with-lease
+  uu = ! git fetch origin -p && git branch -vv | grep 'gone]' | awk '{ print $1 }'
 [grep]
   lineNumber = true
 [core]
