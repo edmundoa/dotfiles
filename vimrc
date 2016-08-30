@@ -153,3 +153,6 @@ vmap <Leader>a, :Tabularize /,\zs<CR>
 
 " Open the current file with Marked.app
 :nmap <Leader><Space> :silent !open -a 'Marked 2.app' '%:p'<CR>:redraw!<CR>
+
+:nnoremap <Leader>a <C-a>
+:nnoremap <Leader>x <C-x>
