@@ -22,6 +22,10 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 
 export NVM_DIR=~/.nvm
 
+if [ -f /usr/local/bin/go ]; then
+  export GOPATH=$HOME/Workspace/gopath
+fi
+
 if [ -f /usr/local/opt/nvm/nvm.sh ]; then
   source /usr/local/opt/nvm/nvm.sh
 fi
