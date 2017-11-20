@@ -88,7 +88,8 @@ set list
 set lcs=tab:»»,eol:¬
 
 " Show available command options when tab is pressed
-set wildmode=longest,list
+set wildmode=longest,list,full
+set wildmenu
 
 " Other options
 set enc=utf-8
