@@ -27,6 +27,7 @@
   statsu = !sh -c 'gti status'
   yoda = push --force-with-lease
   uu = ! git fetch origin -p && git branch -vv | grep 'gone]' | awk '{ print $1 }'
+  sps = ! git stash && git pull && git stash pop
 [grep]
   lineNumber = true
 [core]
