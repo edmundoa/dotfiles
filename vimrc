@@ -158,3 +158,6 @@ nmap <Leader><Space> :silent !open -a 'Marked 2.app' '%:p'<CR>:redraw!<CR>
 
 nnoremap <Leader>a <C-a>
 nnoremap <Leader>x <C-x>
+
+" Mapping to insert new line in normal mode
+nmap <S-K> i<CR><Esc>
