@@ -161,3 +161,5 @@ nnoremap <Leader>x <C-x>
 
 " Mapping to insert new line in normal mode
 nmap <S-K> i<CR><Esc>
+
+vmap <Leader>c :!pbcopy<CR>u<CR>
