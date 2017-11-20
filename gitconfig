@@ -1,6 +1,8 @@
 [user]
   name = Edmundo Alvarez
   email = edmundo@edmundoa.com
+[includeIf "gitdir:~/Workspace/graylog/"]
+  path = .gitconfig-work
 [branch]
   autosetuprebase = always
 [pull]
