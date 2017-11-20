@@ -76,6 +76,7 @@ set softtabstop=2
 set ignorecase
 set smartcase
 set hlsearch
+set incsearch
 
 " Backup and swap options
 set nobackup
