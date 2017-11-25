@@ -48,6 +48,7 @@ let g:airline_right_sep=''
 let g:airline_theme='solarized'
 let g:airline_enable_syntastic=0
 let g:airline_powerline_fonts=0
+let g:airline#extensions#tabline#enabled = 1
 
 " vim-vroom config
 let g:vroom_use_dispatch=1
