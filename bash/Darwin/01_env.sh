@@ -3,6 +3,7 @@ alias gh='git config --get remote.origin.url | awk -F: '\''{ gsub(".git","",$2);
 alias cask='brew cask'
 alias gpc='graylog-project'
 alias gpu='graylog-project co -u'
+alias ia='open $1 -a /Applications/iA\ Writer.app'
 
 if [ -f /usr/local/share/bash-completion/bash_completion ]; then
   source /usr/local/share/bash-completion/bash_completion
