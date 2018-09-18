@@ -163,3 +163,12 @@ nnoremap <Leader>x <C-x>
 nmap <S-K> i<CR><Esc>
 
 vmap <Leader>c :!pbcopy<CR>u<CR>
+
+" Run prettier
+function! RunPrettier() abort
+  let curw = winsaveview()
+  silent %!prettier --trailing-comma all --single-quote --stdin-filepath %
+  call winrestview(curw)
+endfunction
+
+nnoremap gp :call RunPrettier()<CR>
