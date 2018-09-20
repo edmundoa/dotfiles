@@ -172,3 +172,9 @@ function! RunPrettier() abort
 endfunction
 
 nnoremap gp :call RunPrettier()<CR>
+
+" Use The Silver Searcher as search
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
